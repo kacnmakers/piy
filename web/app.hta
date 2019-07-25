@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <HTA:APPLICATION 
+            ICON="imgs/hta/favicon.ico" 
+          ID="slovesnko.meowes.charliecat.piyhtanormal" 
+            APPLICATIONNAME = "Pïÿ" 
+            BORDER = "thick," 
+            BORDERSTYLE = "normal" 
+            CAPTION = "yes" 
+            SHOWINTASKBAR = "yes" 
+            SINGLEINSTANCE = "no" 
+            SYSMENU = "yes" 
+            WINDOWSTATE = "normal" 
+            SCROLL = "yes" 
+            SCROLLFLAT = "yes" 
+            VERSION = "beta1" 
+            INNERBORDER = "yes" 
+            SELECTION = "yes"
+            MAXIMIZEBUTTON = "yes"
+            MINIMIZEBUTTON = "yes"
+            NAVIGABLE = "yes" 
+            CONTEXTMENU = "yes"> 
+            <title>Pïÿ</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <style>
+            html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #0C2550;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+a {
+  color: #0C2550;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 96px 0;
+}
+
+section h2 {
+  font-size: 48px;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: auto !important;
+  }
+  .single-page a {
+    padding: 32px 18px;
+    line-height: 38px !important;
+  }
+  #mainNav .navbar-nav > li > a {
+    font-size: 15px !important;
+  }
+}
+
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: white;
+  padding: 48px 0;
+}
+
+#mainNav .navbar-brand {
+  color: #0C2550;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  color: #051024;
+}
+
+#mainNav .navbar-brand {
+  margin: 0 auto;
+}
+
+#mainNav .navbar-toggler {
+  display: none;
+  font-size: 12px;
+  padding: 8px 10px;
+  color: #222222;
+}
+
+#mainNav .navbar-nav > li {
+  position: relative;
+  margin-left: 16px;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 19px;
+  font-family: 'Calibri', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+#mainNav .navbar-nav > li > a.active {
+  color: #0C2550 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: #222222;
+}
+
+#mainNav .navbar-nav > li > a:hover {
+  color: #0056b3;
+}
+
+#mainNav .navbar-nav > li > ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 1px 6px #ccc;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#mainNav .navbar-nav > li > ul li a {
+  padding: 16px 24px;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 600;
+}
+
+#mainNav .navbar-nav > li > ul li a:hover {
+  background: #EFF7FC;
+}
+
+#mainNav .navbar-nav > li:hover
+> ul {
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: fade(white, 70%);
+  }
+  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+    color: white;
+  }
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    color: #0C2550;
+  }
+  #mainNav.navbar-shrink {
+    border-color: rgba(34, 34, 34, 0.1);
+    background-color: white;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #222222;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+    color: #0C2550;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+    color: #222222;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+    color: #0C2550;
+  }
+}
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  color: #0C2550;
+  background: white;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: 60px;
+  }
+}
+
+header.masthead .header-content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+header.masthead .header-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  header.masthead .header-content h1 {
+    font-size: 18px;
+  }
+  header.masthead .header-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  header.masthead .header-content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead .cta li:first-child {
+    float: left;
+  }
+  header.masthead .cta li {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  header.masthead .cta li {
+    margin: 0 auto 32px 0;
+    text-align: center;
+    width: 50%;
+    float: left;
+  }
+  header.masthead .cta li img {
+    width: 150px;
+    max-width: 100%;
+  }
+}
+
+header.masthead .light-blue {
+  color: #68BBE1;
+}
+
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .device-container .bluebig img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 60vh;
+    min-height: 530px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    text-align: left;
+  }
+  header.masthead .header-content h2 {
+    font-size: 50px;
+  }
+  header.masthead .device-container {
+    max-width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+}
+<style>
+    </head>
+    <body>
+    body id="page-top" class="watch-app">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">
+          <img src="../img/logo-bluewallet.svg" alt="BlueWallet - Bitcoin Wallet">
+        </a>
+        <div class="navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="single-page nav-item">
+                  <a href="/"><i class="fa fa-arrow-left"></i> home</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
