@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "description": "A slovak Pay app",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "piy",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
